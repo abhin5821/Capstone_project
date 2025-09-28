@@ -3,3 +3,4 @@ Flask
 tensorflow
 opencv-python
 numpy
+gunicorn
