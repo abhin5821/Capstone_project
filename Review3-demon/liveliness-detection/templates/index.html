@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liveness Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Liveness Detection</h1>
+        <p>This app checks if the face in the video is real or a spoof.</p>
+        <div class="video-container">
+            <canvas id="canvas" width="640" height="480"></canvas>
+            <video id="video" width="640" height="480" autoplay playsinline style="display: none;"></video>
+        </div>
+        <div class="controls">
+            <button id="startButton">Start Detection</button>
+            <button id="stopButton" disabled>Stop Detection</button>
+        </div>
+        <p id="status">Click "Start Detection" to begin.</p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

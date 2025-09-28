@@ -1,0 +1,82 @@
+/* static/style.css */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    margin: auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+canvas {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+h1 {
+    color: #1a73e8;
+}
+
+.controls {
+    margin: 1rem 0;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    margin: 0 10px;
+    transition: background-color 0.2s ease;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#startButton {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+}
+#startButton:hover:not(:disabled) {
+    background-color: #218838;
+}
+
+#stopButton {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+}
+#stopButton:hover:not(:disabled) {
+    background-color: #c82333;
+}
+
+
+#status {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #555;
+    height: 24px; /* Reserve space to prevent layout shifts */
+}
